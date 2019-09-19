@@ -20,7 +20,7 @@ namespace Matchingpairsgame
     public partial class FormMatchingPairsGame : Form
     {
         Random random = new Random();
-        List<string> icons = new List<string>()
+        List<string> icons = new List<string>() // list of 
         {
             "!" , "!" , "N" , "N" , "," , "," , "k" , "k" ,
             "b" , "b" , "v" , "v" , "w" , "w" , "z" , "z"
@@ -29,8 +29,22 @@ namespace Matchingpairsgame
         public FormMatchingPairsGame()
         {
             InitializeComponent();
+            AssignIconsToSquares();
         }
+        private void AssignIconsToSquares()
+        {
+            foreach (Control control in tableLayoutPanel1.Controls) //control label is converted into icon label
+            {
+                Label iconLabel = control as Label; 
+                if (iconLabel != null)
+                {
+                    int randomNumber = random.Next(icons.Count);
+                    iconLabel.Text = icons[randomNumber];
 
+                    icons.RemoveAt(randomNumber); // take the icon and remove it from list so its not used again. 
+                }
+            }
+        }
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
 
