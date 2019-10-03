@@ -28,7 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.Player = new AxWMPLib.AxWindowsMediaPlayer();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
             this.SuspendLayout();
+            // 
+            // Player
+            // 
+            this.Player.Enabled = true;
+            this.Player.Location = new System.Drawing.Point(0, 0);
+            this.Player.Name = "Player";
+            this.Player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Player.OcxState")));
+            this.Player.Size = new System.Drawing.Size(669, 174);
+            this.Player.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(214, 143);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 31);
+            this.textBox1.TabIndex = 1;
             // 
             // Form1
             // 
@@ -36,16 +57,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(671, 226);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Player);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "My Music Player";
+            ((System.ComponentModel.ISupportInitialize)(this.Player)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private AxWMPLib.AxWindowsMediaPlayer Player;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
