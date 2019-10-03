@@ -17,13 +17,34 @@ namespace MyMusicPlayer
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonBrowse_Click(object sender, EventArgs e)
         {
-                    }
+            if(openFileDialog1.ShowDialog()==DialogResult.OK)
+            {
+                textBox1.Text = openFileDialog1.FileName;
+            }
+            Player.URL = textBox1.Text; 
+        }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void buttonPlay_Click(object sender, EventArgs e)
         {
+            Player.Ctlcontrols.play();
+        }
 
+        private void buttonPause_Click(object sender, EventArgs e)
+        {
+            Player.Ctlcontrols.pause();
+        }
+
+        private void buttonStop_Click(object sender, EventArgs e)
+        {
+            Player.Ctlcontrols.stop();
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Close();
+            
         }
     }
 }
