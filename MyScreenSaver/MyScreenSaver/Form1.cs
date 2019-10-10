@@ -57,5 +57,25 @@ namespace MyScreenSaver
            
             }
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Refresh();
+        }
+
+        private void frmScSaver_Paint(object sender, PaintEventArgs e)
+        {
+            foreach (BritPic bp in BritPics) 
+            {
+                e.Graphics.DrawImage(BGImages[bp.PicNum], bp.X, bp.Y);
+                bp.X -= 2; //drawing of the images and postion them on the x and y axis
+                
+                if (bp.X < -250) // if the object moves off the left edge of the screen, move it back 
+                {
+                    bp.X = Width + rand.Next(20, 100);
+                }
+            }
+                
+        }
     }
 }
