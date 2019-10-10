@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CreateScreenSaver")]
+[assembly: AssemblyTitle("MyScreenSaver")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CreateScreenSaver")]
+[assembly: AssemblyProduct("MyScreenSaver")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("2a8b5173-078d-42d7-9100-b5b30bd2adb3")]
+[assembly: Guid("900314c2-a358-4f62-9d7f-1c8ed639af3d")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2A8B5173-078D-42D7-9100-B5B30BD2ADB3}</ProjectGuid>
+    <ProjectGuid>{900314C2-A358-4F62-9D7F-1C8ED639AF3D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>CreateScreenSaver</RootNamespace>
-    <AssemblyName>CreateScreenSaver</AssemblyName>
+    <RootNamespace>MyScreenSaver</RootNamespace>
+    <AssemblyName>MyScreenSaver</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

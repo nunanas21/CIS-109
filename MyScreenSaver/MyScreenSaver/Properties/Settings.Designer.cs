@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CreateScreenSaver.Properties
+namespace MyScreenSaver.Properties
 {
 
 
