@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EA38E826-ADF9-4E95-8FFC-4EBA73019A75}</ProjectGuid>
+    <ProjectGuid>{F3690052-6147-4F7A-AD3B-0D2930420174}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>MyScreenSaver</RootNamespace>
     <AssemblyName>MyScreenSaver</AssemblyName>
