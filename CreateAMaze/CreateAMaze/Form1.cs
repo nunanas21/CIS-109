@@ -28,11 +28,6 @@ namespace CreateAMaze
 
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void label35_Click(object sender, EventArgs e)
         {
 
@@ -49,6 +44,11 @@ namespace CreateAMaze
             Point startingPoint = panel1.Location;
             startingPoint.Offset(10, 10);
             Cursor.Position = PointToScreen(startingPoint);
+        }
+
+        private void wall_MouseEnter(object sender, EventArgs e)
+        {
+            MoveToStart();
         }
     }
 }
