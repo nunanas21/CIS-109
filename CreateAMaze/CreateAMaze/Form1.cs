@@ -20,21 +20,6 @@ namespace CreateAMaze
             MoveToStart();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label35_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void FinishLabel_MouseEnter(object sender, EventArgs e)
         {
             finishSoundPlayer.Play();
@@ -53,6 +38,11 @@ namespace CreateAMaze
         private void wall_MouseEnter(object sender, EventArgs e)
         {
             MoveToStart();
+        }
+
+        private void label33_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
