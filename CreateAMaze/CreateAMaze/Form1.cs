@@ -46,5 +46,11 @@ namespace CreateAMaze
         {
 
         }
+
+        private void FinishLabel_MouseEnter(object sender, EventArgs e)
+        {
+            MessageBox.Show("Congratualations!"); // once teh mouse enters the finish label the message box will pop up 
+            Close();
+        }
     }
 }
