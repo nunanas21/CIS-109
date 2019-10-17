@@ -8,3 +8,13 @@ C:\Users\nunanas21\Documents\CIS\GIT\MyScreenSaver\MyScreenSaver\obj\Debug\MyScr
 C:\Users\nunanas21\Documents\CIS\GIT\MyScreenSaver\MyScreenSaver\obj\Debug\MyScreenSaver.csproj.CoreCompileInputs.cache
 C:\Users\nunanas21\Documents\CIS\GIT\MyScreenSaver\MyScreenSaver\obj\Debug\MyScreenSaver.exe
 C:\Users\nunanas21\Documents\CIS\GIT\MyScreenSaver\MyScreenSaver\obj\Debug\MyScreenSaver.pdb
+C:\Users\nunanas21\Documents\CIS 109 C#\GIT\MyScreenSaver\MyScreenSaver\bin\Debug\MyScreenSaver.exe.config
+C:\Users\nunanas21\Documents\CIS 109 C#\GIT\MyScreenSaver\MyScreenSaver\bin\Debug\MyScreenSaver.exe
+C:\Users\nunanas21\Documents\CIS 109 C#\GIT\MyScreenSaver\MyScreenSaver\bin\Debug\MyScreenSaver.pdb
+C:\Users\nunanas21\Documents\CIS 109 C#\GIT\MyScreenSaver\MyScreenSaver\obj\Debug\MyScreenSaver.csprojAssemblyReference.cache
+C:\Users\nunanas21\Documents\CIS 109 C#\GIT\MyScreenSaver\MyScreenSaver\obj\Debug\MyScreenSaver.frmScSaver.resources
+C:\Users\nunanas21\Documents\CIS 109 C#\GIT\MyScreenSaver\MyScreenSaver\obj\Debug\MyScreenSaver.Properties.Resources.resources
+C:\Users\nunanas21\Documents\CIS 109 C#\GIT\MyScreenSaver\MyScreenSaver\obj\Debug\MyScreenSaver.csproj.GenerateResource.cache
+C:\Users\nunanas21\Documents\CIS 109 C#\GIT\MyScreenSaver\MyScreenSaver\obj\Debug\MyScreenSaver.csproj.CoreCompileInputs.cache
+C:\Users\nunanas21\Documents\CIS 109 C#\GIT\MyScreenSaver\MyScreenSaver\obj\Debug\MyScreenSaver.exe
+C:\Users\nunanas21\Documents\CIS 109 C#\GIT\MyScreenSaver\MyScreenSaver\obj\Debug\MyScreenSaver.pdb

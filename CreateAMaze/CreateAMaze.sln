@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateAMaze", "CreateAMaze\CreateAMaze.csproj", "{460154D1-963B-4BC3-82AF-CDCF4A0B165A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{460154D1-963B-4BC3-82AF-CDCF4A0B165A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{460154D1-963B-4BC3-82AF-CDCF4A0B165A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{460154D1-963B-4BC3-82AF-CDCF4A0B165A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{460154D1-963B-4BC3-82AF-CDCF4A0B165A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7D6E4B1-22FF-42AD-BB87-B8347F16729D}
+	EndGlobalSection
+EndGlobal
