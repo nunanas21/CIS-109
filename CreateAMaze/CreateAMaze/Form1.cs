@@ -12,6 +12,8 @@ namespace CreateAMaze
 {
     public partial class Form1 : Form
     {
+        System.Media.SoundPlayer startSoundPlayer = new System.Media.SoundPlayer(@"C:\Windows\media\Alarm08.wav");// This is the song that will play when the cursor touches any of the walls
+        System.Media.SoundPlayer finishSoundPlayer = new System.Media.SoundPlayer(@"C:\Windows\media\Alarm04.wav");// This is the song that will play when the cursor touches any of the walls
         public Form1()
         {
             InitializeComponent();
@@ -35,12 +37,14 @@ namespace CreateAMaze
 
         private void FinishLabel_MouseEnter(object sender, EventArgs e)
         {
+            finishSoundPlayer.Play();
             MessageBox.Show("Congratualations!"); // once teh mouse enters the finish label the message box will pop up 
             Close();
 
         }
         private void MoveToStart()//repositions the cursor back to start when the cursor hits a wall or moves outside the area
         {
+            startSoundPlayer.Play(); // when the game starts a sound will play 
             Point startingPoint = panel1.Location;
             startingPoint.Offset(10, 10);
             Cursor.Position = PointToScreen(startingPoint);
