@@ -15,16 +15,7 @@ namespace CreateAMaze
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            MoveToStart();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -51,6 +42,13 @@ namespace CreateAMaze
         {
             MessageBox.Show("Congratualations!"); // once teh mouse enters the finish label the message box will pop up 
             Close();
+
+        }
+        private void MoveToStart()//repositions the cursor back to start when the cursor hits a wall or moves outside the area
+        {
+            Point startingPoint = panel1.Location;
+            startingPoint.Offset(10, 10);
+            Cursor.Position = PointToScreen(startingPoint);
         }
     }
 }
