@@ -17,9 +17,12 @@ namespace PictureViewer
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e) // When show button is clicked it will open up a f
         {
-
+            if (openFileDialog1.ShowDialog()== DialogResult.OK)
+            {
+                pictureBox1.Load(openFileDialog1.FileName);
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
