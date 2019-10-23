@@ -80,6 +80,7 @@
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Stretch";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // flowLayoutPanel1
             // 
@@ -102,6 +103,7 @@
             this.closeButton.TabIndex = 0;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // setBckgrndcolorButton
             // 
@@ -112,6 +114,7 @@
             this.setBckgrndcolorButton.TabIndex = 1;
             this.setBckgrndcolorButton.Text = "Set Background Color";
             this.setBckgrndcolorButton.UseVisualStyleBackColor = true;
+            this.setBckgrndcolorButton.Click += new System.EventHandler(this.setBckgrndcolorButton_Click);
             // 
             // clearPicturebutton
             // 
@@ -122,6 +125,7 @@
             this.clearPicturebutton.TabIndex = 2;
             this.clearPicturebutton.Text = "Clear Picture";
             this.clearPicturebutton.UseVisualStyleBackColor = true;
+            this.clearPicturebutton.Click += new System.EventHandler(this.clearPicturebutton_Click);
             // 
             // showPicturebutton
             // 
@@ -150,6 +154,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Picture Viewer";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

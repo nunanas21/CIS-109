@@ -21,5 +21,30 @@ namespace PictureViewer
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void setBckgrndcolorButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clearPicturebutton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
