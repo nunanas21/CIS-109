@@ -27,7 +27,7 @@ namespace PictureViewer
             this.Close();
         }
 
-        private void setBackgroundColor_Click(object sender, EventArgs e)
+        private void setBackgroundColor_Click(object sender, EventArgs e) // Show the color dialog box, if user clicks ok, change the background to chosen color
         {
             if (colorDialog1.ShowDialog() == DialogResult.OK)
                 pictureBox1.BackColor = colorDialog1.Color;
