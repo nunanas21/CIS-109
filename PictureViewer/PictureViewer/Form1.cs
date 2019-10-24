@@ -22,19 +22,20 @@ namespace PictureViewer
 
         }
 
-        private void closeButton_Click(object sender, EventArgs e)
+        private void closeButton_Click(object sender, EventArgs e)// closes the  picture viewer when close is clicked. 
         {
-
+            this.Close();
         }
 
         private void setBackgroundColor_Click(object sender, EventArgs e)
         {
-
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+                pictureBox1.BackColor = colorDialog1.Color;
         }
 
-        private void clearPictureButton_Click(object sender, EventArgs e)
+        private void clearPictureButton_Click(object sender, EventArgs e)// if clear picture button is clicked, it clears/ null 
         {
-
+            pictureBox1.Image = null;
         }
 
         private void showPicturebutton_Click(object sender, EventArgs e) // when show picture button is selected, it will open up a file dialog box
@@ -47,7 +48,10 @@ namespace PictureViewer
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox1.Checked)
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage; // if check box is checked, you can stretch the size of the image
+            else
+                pictureBox1.SizeMode = PictureBoxSizeMode.Normal; // if not checked, it will go back to its normal size
         }
     }
 }
