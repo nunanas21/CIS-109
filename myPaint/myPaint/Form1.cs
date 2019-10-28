@@ -27,5 +27,43 @@ namespace myPaint
             else
                 drawing = true;
         }
+
+        private void pictureBox2_MouseMove(object sender, MouseEventArgs e)// this method will run when the mouse enters the picture box
+        {
+            if (drawing)
+            {
+                Graphics g = Graphics.FromImage(bmp);
+                g.DrawEllipse(p, e.X, e.Y, 3, 1);
+                pictureBox2.Image = bmp;
+
+
+            }
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            p.Color = Color.Magenta; 
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            p.Color = Color.Green;
+
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            p.Color = Color.Blue;
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            p.Color = Color.Purple;
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            p.Color = Color.Yellow;
+        }
     }
 }
