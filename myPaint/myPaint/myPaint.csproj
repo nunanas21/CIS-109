@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{673CFF52-1E7C-4F34-A6B6-1EB8CA4579A6}</ProjectGuid>
+    <ProjectGuid>{152239C7-A163-443F-88BD-3621AA6ADFDB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>myPaint</RootNamespace>
     <AssemblyName>myPaint</AssemblyName>
