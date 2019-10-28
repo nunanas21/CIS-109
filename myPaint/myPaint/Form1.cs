@@ -65,5 +65,29 @@ namespace myPaint
         {
             p.Color = Color.Yellow;
         }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog1.Filter = "Jpeg Image|*.jpg|Bitmap Image *.bmp|";
+            saveFileDialog1.Title = "Save an Image File";
+            saveFileDialog1.ShowDialog();
+            
+            if (saveFileDialog1.FileName != "")
+            {
+                System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile();
+                switch (saveFileDialog1.FilterIndex)
+                {
+                    case 1:
+                        this.pictureBox2.Image.Save(fs, System.Drawing.Imaging.ImageFormat.Jpeg);
+                        break;
+
+                    case 2:
+                        this.pictureBox2.Image.Save(fs, System.Drawing.Imaging.ImageFormat.Bmp);
+                        break;
+                            
+                }
+            }
+        }
     }
 }
