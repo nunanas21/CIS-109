@@ -71,6 +71,7 @@
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(68, 37);
             this.btnBack.Text = "Back";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnForward
             // 
@@ -80,6 +81,7 @@
             this.btnForward.Name = "btnForward";
             this.btnForward.Size = new System.Drawing.Size(104, 37);
             this.btnForward.Text = "Forward";
+            this.btnForward.Click += new System.EventHandler(this.btnForward_Click);
             // 
             // toolStripSeparator1
             // 
@@ -90,6 +92,7 @@
             // 
             this.cboLocation.Name = "cboLocation";
             this.cboLocation.Size = new System.Drawing.Size(121, 40);
+            this.cboLocation.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboLocation_KeyDown);
             // 
             // btnGo
             // 
@@ -99,6 +102,7 @@
             this.btnGo.Name = "btnGo";
             this.btnGo.Size = new System.Drawing.Size(49, 37);
             this.btnGo.Text = "Go";
+            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
             // 
             // frmMain
             // 
