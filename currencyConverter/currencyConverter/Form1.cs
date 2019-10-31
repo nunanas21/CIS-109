@@ -16,5 +16,10 @@ namespace currencyConverter
         {
             InitializeComponent();
         }
+
+        private void btnConverter_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://www.foreignexchangeresource.com/currency-converter.php?c=CAD&a=USD&amt=1&panel=1&button=2");
+        }
     }
 }
