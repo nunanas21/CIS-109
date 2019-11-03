@@ -41,5 +41,10 @@ namespace myWebbrowser
         {
             webBrowser1.Navigate(cboLocation.Text);
         }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e) // it will update the title and add it to the webbrowser up top
+        {
+            Text = "allthingsnawesome - " + webBrowser1.Document.Title; 
+        }
     }
 }
