@@ -14,6 +14,7 @@ namespace myCalculator
     {
         Double resultValue = 0;
         string operatorClicked = "";
+        bool isOperatorClicked = false;  // when button hasn't been clicked it will be false
         public Form1()
         {
             InitializeComponent();
@@ -32,16 +33,37 @@ namespace myCalculator
         private void click_button(object sender, EventArgs e)
         {
 
-            if (resultbox.Text == "0") // if the text from the resultbox  is equal to zero 
+            if (resultbox.Text == "0" || (isOperatorClicked))  // if the text from the resultbox  is equal to zero 
                 resultbox.Clear(); // the 0 will clear before you click a button. 
 
+            isOperatorClicked = false;
             Button button = (Button)sender;
-            resultbox.Text = resultbox.Text + button.Text; // it will display the text on any button that is clicked
+            if (button.Text == ".")
+            {
+                if (!resultbox.Text.Contains("."))
+                    resultbox.Text = resultbox.Text + button.Text; 
+            }
+            else
+                resultbox.Text = resultbox.Text + button.Text; // it will display the text on any button that is clicked
+
         }
 
         private void operator_click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
+            if (resultValue != 0)
+            {
+                btnequal.PerformClick();
+                operatorClicked = button.Text;
+                isOperatorClicked = true;
+            }
+            else
+            {
+                operatorClicked = button.Text;
+                resultValue = Double.Parse(resultbox.Text);
+                isOperatorClicked = true;
+            }
+
             operatorClicked = button.Text;
             resultValue = Double.Parse(resultbox.Text); // since result value is declared a double data type, it will pass the msessage from the text box and convert it into a relevant value
         }
