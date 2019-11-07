@@ -51,5 +51,26 @@ namespace myCalculator
            resultbox.Text = "0";
            resultValue = 0;   
         }
+
+        private void btnequal_Click(object sender, EventArgs e)
+        {
+            switch (operatorClicked)// switch will look for an expression(operator_clicked)and evaluate the expression once. the value of the expression will than be compared to each of the case like addition, subtraction etc. If ther is a match, the associated block of code will be executed once the match is found, it hits the breaks
+            {
+                case "+":
+                    resultbox.Text = (resultValue + Double.Parse(resultbox.Text)).ToString();
+                    break;
+                case "-":
+                    resultbox.Text = (resultValue - Double.Parse(resultbox.Text)).ToString();
+                    break;
+                case "*":
+                    resultbox.Text = (resultValue * Double.Parse(resultbox.Text)).ToString();
+                    break;
+                case "/":
+                    resultbox.Text = (resultValue / Double.Parse(resultbox.Text)).ToString();
+                    break;
+                default:
+                    break; 
+            }
+        }
     }
 }

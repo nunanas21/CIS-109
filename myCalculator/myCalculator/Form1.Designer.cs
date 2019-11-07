@@ -68,7 +68,7 @@
             this.btndivide.Name = "btndivide";
             this.btndivide.Size = new System.Drawing.Size(135, 96);
             this.btndivide.TabIndex = 1;
-            this.btndivide.Text = "÷";
+            this.btndivide.Text = "/";
             this.btndivide.UseVisualStyleBackColor = false;
             this.btndivide.Click += new System.EventHandler(this.operator_click);
             // 
@@ -225,6 +225,7 @@
             this.btnequal.TabIndex = 14;
             this.btnequal.Text = "=";
             this.btnequal.UseVisualStyleBackColor = false;
+            this.btnequal.Click += new System.EventHandler(this.btnequal_Click);
             // 
             // btnadd
             // 
