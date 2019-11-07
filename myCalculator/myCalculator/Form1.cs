@@ -29,6 +29,10 @@ namespace myCalculator
 
         private void click_button(object sender, EventArgs e)
         {
+
+            if (resultbox.Text == "0") // if the text from the resultbox  is equal to zero 
+                resultbox.Clear(); // the 0 will clear before you click a button. 
+
             Button button = (Button)sender;
             resultbox.Text = resultbox.Text + button.Text; // it will display the text on any button that is clicked
         }
