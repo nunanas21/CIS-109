@@ -12,6 +12,8 @@ namespace myCalculator
 {
     public partial class Form1 : Form
     {
+        Double resultValue = 0;
+        string operatorClicked = "";
         public Form1()
         {
             InitializeComponent();
@@ -35,6 +37,19 @@ namespace myCalculator
 
             Button button = (Button)sender;
             resultbox.Text = resultbox.Text + button.Text; // it will display the text on any button that is clicked
+        }
+
+        private void operator_click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            operatorClicked = button.Text;
+            resultValue = Double.Parse(resultbox.Text); // since result value is declared a double data type, it will pass the msessage from the text box and convert it into a relevant value
+        }
+
+        private void btnclear_Click(object sender, EventArgs e)
+        {
+           resultbox.Text = "0";
+           resultValue = 0;   
         }
     }
 }
