@@ -17,16 +17,6 @@ namespace myCalculator
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -35,6 +25,12 @@ namespace myCalculator
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void click_button(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            resultbox.Text = resultbox.Text + button.Text; // it will display the text on any button that is clicked
         }
     }
 }
