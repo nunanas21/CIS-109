@@ -127,8 +127,6 @@
             this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
-            // openFileDialog1
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -147,6 +145,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "My Music Player";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Player)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
