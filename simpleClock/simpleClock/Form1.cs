@@ -16,7 +16,7 @@ namespace simpleClock
         public Clock()
         {
             InitializeComponent();
-        } 
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -33,14 +33,37 @@ namespace simpleClock
             int ss = DateTime.Now.Second;
 
             string time = "";
+
             if (hh < 10)
             {
                 time += "0" + hh;
             }
             else
             {
-                time += hh; 
+                time += hh;
             }
             time += ":";
+
+            if (mm < 10)
+            {
+                time += "0" + mm;
+            }
+            else
+            {
+                time += mm;
+            }
+            time += ":";
+
+            if (ss < 10)
+            {
+                time += "0" + ss;
+            }
+            else
+            {
+                time += ss;
+            }
+            label1.Text = time; 
+
         }
+    }
 }
