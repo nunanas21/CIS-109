@@ -26,5 +26,15 @@ namespace notePad
         {
 
         }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void undoToolStripMenuItem_Click(object sender, EventArgs e)//
+        {
+            textBox.Undo(); 
+        }
     }
 }
